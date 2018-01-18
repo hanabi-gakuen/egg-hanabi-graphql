@@ -1,0 +1,66 @@
+{
+  "name": "egg-hanabi-graphql",
+  "version": "1.0.0",
+  "description": "Graphql plugin for hanabi",
+  "eggPlugin": {
+    "name": "hanabiGraphql"
+  },
+  "keywords": [
+    "egg",
+    "eggPlugin",
+    "egg-plugin"
+  ],
+  "dependencies": {
+    "apollo-server-koa": "^1.3.2",
+    "graphql": "^0.12.3",
+    "graphql-tag": "^2.6.1",
+    "graphql-tools": "^2.16.0",
+    "lodash": "^4.17.4"
+  },
+  "devDependencies": {
+    "autod": "^3.0.0",
+    "autod-egg": "^1.0.0",
+    "dataloader": "^1.3.0",
+    "egg": "^2.0.0",
+    "egg-bin": "^4.3.0",
+    "egg-ci": "^1.8.0",
+    "egg-mock": "^3.13.0",
+    "eslint": "^4.11.0",
+    "eslint-config-egg": "^6.0.0",
+    "eslint-plugin-import": "^2.8.0",
+    "webstorm-disable-index": "^1.2.0"
+  },
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "scripts": {
+    "test": "npm run lint -- --fix && egg-bin pkgfiles && npm run test-local",
+    "test-local": "egg-bin test",
+    "cov": "egg-bin cov",
+    "lint": "eslint .",
+    "ci": "egg-bin pkgfiles --check && npm run lint && npm run cov",
+    "pkgfiles": "egg-bin pkgfiles",
+    "autod": "autod",
+    "debug": "egg-bin debug --debug-port=9229 --proxy=9999"
+  },
+  "files": [
+    "app",
+    "config",
+    "agent.js",
+    "lib",
+    "app.js"
+  ],
+  "ci": {
+    "version": "8, 9"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eggjs/egg-hanabi-graphql.git"
+  },
+  "bugs": {
+    "url": "https://github.com/eggjs/egg/issues"
+  },
+  "homepage": "https://github.com/eggjs/egg-hanabi-graphql#readme",
+  "author": "Illyrix",
+  "license": "MIT"
+}
