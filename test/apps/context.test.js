@@ -6,7 +6,7 @@ describe('graphql', () => {
 
   before(() => {
     app = mm.app({
-      baseDir: 'apps/graphql-app'
+      baseDir: 'apps/graphiql-app'
     })
     return app.ready()
   })

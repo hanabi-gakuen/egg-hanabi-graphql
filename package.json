@@ -53,14 +53,6 @@
   "ci": {
     "version": "8, 9"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/eggjs/egg-hanabi-graphql.git"
-  },
-  "bugs": {
-    "url": "https://github.com/eggjs/egg/issues"
-  },
-  "homepage": "https://github.com/eggjs/egg-hanabi-graphql#readme",
   "author": "Illyrix",
   "license": "MIT"
 }
